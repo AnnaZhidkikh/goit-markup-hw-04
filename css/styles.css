@@ -139,38 +139,33 @@ address {
   color: var(--accent-color);
 }
 
-.contact-mail {
+.head-contact {
+  /*display: flex;
+  align-items: center;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--accent-color);
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
 }
-
-.contact-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-text-color);
-}
-.contact-phone:hover,
-.contact-phone:focus {
+.head-contact:hover,
+.head-contact:focus {
   color: var(--accent-color);
+} 
+
+.contact-list-item {
+  display: flex;
+  align-items: center;
 }
 .section-team-list {
   color: var(--primary-section-color);
 }
 .nav-list .link.current {
   color: var(--accent-color);
-}
-.title {
- margin-bottom: 50px;
 }
 
 /* ========= End Header ========= */
@@ -217,6 +212,17 @@ address {
 /* ========= End Hero ========= */
 
 /* ========= Start section text elements ========= */
+.text-content-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .section-about-text-element {
   color: var(--primary-section-color);
   padding-bottom: 47px;
@@ -289,6 +295,8 @@ address {
   flex-basis: calc(100%-120px)/4;
   margin-left: 30px;
   margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .section-team {
   background-color: var(--team-background-color);
@@ -318,17 +326,55 @@ address {
   margin-bottom: 16px;
 }
 .team-member-content-wrapper {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
   padding: 30px 32px;
 
 }
-
 .section-team-list {
   background-color: var(--primary-section-color);
 }
 /* ========= End Our Team section ========= */
 
+/* ========= Start Section Clients ========= */
+
+.section-client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list-link {
+  display: flex;
+  
+}
+.client-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.client-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.client-list-icon {
+  fill: #AFB1B8;
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon {
+  fill: var(--accent-color);
+}
+/* ========= End Section Clients ========= */
 /* ========= Start Section Portfolio ========= */
 
 .portfolio-gallery-btn {
@@ -371,6 +417,11 @@ address {
   margin-right: 260px; 
   margin-bottom: 50px;
 }
+
+.portfolio-list:hover,
+.portfolio-list:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-btn-list:not(:last-child) {
   margin-right: 8px;
 }
@@ -390,6 +441,7 @@ address {
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   padding: 20px 24px;
+  border-top: none;
 }
 /* ========= End Section Portfolio ========= */
 
@@ -440,5 +492,29 @@ address {
 .footer-contact-phone:hover,
 .footer-contact-mail:focus {
   color: var(--accent-color);
+}
+.footer-main {
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer-social-title {
+display: flex;
+justify-content: center;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+.part-adress {
+  margin-right: 70px;
+}
+.footer-social-list-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 /* ========= End Footer ========= */
