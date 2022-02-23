@@ -375,13 +375,6 @@ border-radius: 0px 0px 4px 4px;
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-
-  .contact-list-icon:hover {
-    fill: var(--accent-color);
-  }
-.contact-list-link:hover {
-  color: #2196f3;
-}
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
   fill: var(--accent-color);
