@@ -140,8 +140,6 @@ address {
 }
 
 .head-contact {
-  /*display: flex;
-  align-items: center;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,11 +150,14 @@ address {
   margin-right: 10px;
   fill: var(--secondary-text-color);
 }
+.contact-list-item:hover .contact-icon,
+.contact-list-item:focus .contact-icon {
+  fill: var(--accent-color);
+}
 .head-contact:hover,
 .head-contact:focus {
   color: var(--accent-color);
 } 
-
 .contact-list-item {
   display: flex;
   align-items: center;
@@ -348,32 +349,44 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   justify-content: space-between;
 }
-.clients-list-link {
-  display: flex;
-  
-}
 .client-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.client-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
-  box-sizing: border-box;
   border-radius: 4px;
-  margin-right: 20px;
+  box-sizing: border-box;
 }
-.client-list-item:not(:last-child) {
-  margin-right: 50px;
+.client-list-item:last-child {
+  margin-right: 0px;
 }
 .client-list-icon {
   fill: #AFB1B8;
 }
+.client-list-link:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
+  .contact-list-icon:hover {
+    fill: var(--accent-color);
+  }
+.contact-list-link:hover {
+  color: #2196f3;
+}
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
   fill: var(--accent-color);
-}
+  } 
+  
 /* ========= End Section Clients ========= */
 /* ========= Start Section Portfolio ========= */
 
@@ -499,7 +512,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 .footer-social-title {
 display: flex;
-justify-content: center;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -510,6 +522,9 @@ margin-bottom: 20px;
 }
 .part-adress {
   margin-right: 70px;
+}
+.footer-social-list-icon {
+  fill: white;
 }
 .footer-social-list-link {
   background: rgba(255, 255, 255, 0.1);
