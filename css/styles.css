@@ -140,6 +140,8 @@ address {
 }
 
 .head-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,6 +152,7 @@ address {
   margin-right: 10px;
   fill: var(--secondary-text-color);
 }
+
 .contact-list-item:hover .contact-icon,
 .contact-list-item:focus .contact-icon {
   fill: var(--accent-color);
