@@ -140,7 +140,7 @@ address {
 }
 
 .head-contact {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -150,16 +150,17 @@ address {
 }
 .contact-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+
+  fill:currentColor;
 }
 
-.contact-list-item:hover .contact-icon,
-.contact-list-item:focus .contact-icon {
-  fill: var(--accent-color);
-}
 .head-contact:hover,
 .head-contact:focus {
   color: var(--accent-color);
+}
+.head-contact:hover .contact-icon,
+.head-contact:focus .contact-icon{
+  fill: var(--accent-color);
 } 
 .contact-list-item {
   display: flex;
@@ -519,6 +520,7 @@ margin-bottom: 20px;
 .part-adress {
   margin-right: 70px;
 }
+
 .footer-social-list-icon {
   fill: white;
 }
